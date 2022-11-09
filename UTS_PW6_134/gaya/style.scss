@@ -1,6 +1,11 @@
 body{
     background-color: #0b3088;
     font-family: 'Roboto', sans-serif;
+    background-image: url(../image/fabric.jpeg);
+}
+
+body, html{
+    height: 100%;
 }
 
 .navbar{
