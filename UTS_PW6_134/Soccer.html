@@ -1,0 +1,938 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CHELSEA FC</title>
+
+    <!-- Bootsrap QS-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <!-- Bootsrap QS-->
+
+    <!-- CSS connect -->
+    <link rel="stylesheet" href="gaya/style.css">
+    <!-- CSS connect -->
+
+    <!-- Font Awesome Icon Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Font Awesome Icon Library -->
+
+    <!-- cdjns -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- cdjns -->
+
+    <!-- Font -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+    </style>
+    <!-- Font End -->
+
+  </head>
+  <body id="home">
+
+    <!-- Navbar -->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">CHELSEA FC</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#news">News</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#team">Team</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#match">Match</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#shop">Shop</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#fans">Fans</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search" style="margin-left: 50px;">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline text-white" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Image -->
+    <div class="bg-image d-flex justify-content-center align-items-center text-white p-md-3">
+      <div class="content text-center">
+        <img src="image/icon.png" alt="logo" width="200px" style="margin-right: 50px;">
+      </div>
+      <div onmouseover="this.style.color='#0dcaf0'" onmouseout="this.style.color='#ffff'" class="content text-center">
+        <h1 class="tulisan" style="padding-right: 15px;"> 
+          CHELSEA 
+        </h1>
+      </div>
+      <div onmouseover="this.style.color='#0dcaf0'" onmouseout="this.style.color='#ffff'" class="content text-center">
+        <h1 class="tulisan" style="padding-right: 15px;"> 
+          FOOTBALL  
+        </h1>
+      </div>
+      <div onmouseover="this.style.color='#0dcaf0'" onmouseout="this.style.color='#ffff'" class="content text-center">
+        <h1 class="tulisan"> 
+          CLUB  
+        </h1>
+      </div>
+    </div>
+    <!-- Image End -->
+
+    <!-- js -->
+    <script src="fungsi/main.js"></script>
+    <script>
+      var nav = document.querySelector('nav');
+
+      window.addEventListener('scroll', function() {
+        if (window.pageYOffset > 100) {
+          nav.classList.add('bg-primary', 'shadow');
+        } else {
+          nav.classList.remove('bg-primary', 'shadow');
+        }
+      });
+    </script>
+    <!-- js  end -->
+
+    <!-- News -->
+    <section id="news">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col text-white">
+            <h2 style="padding-bottom: 3rem; font-weight: bold;">NEWS</h2>
+          </div>
+        </div>
+        <!-- Carousel -->
+        <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" style="padding-bottom: 2rem;">
+          <div class="carousel-inner">
+            <div class="carousel-item active" data-interval="3000">
+              <a href="https://www.chelseafc.com/in/match/newcastle-united-vs-chelsea-english-premier-league-2022-11-12" target="_blank"><img src="image/newschel.png" class="d-block w-100" alt="0"></a>
+            </div>
+            <div class="carousel-item" data-interval="3000">
+              <a href="https://www.football.london/all-about/chelsea-injury-news" target="_blank"><img src="image/injury.png" class="d-block w-100" alt="1"></a>
+            </div>
+            <div class="carousel-item" data-interval="3000">
+              <a href="https://theprideoflondon.com/2022/10/19/complete-chelsea-injury-list-date/" target="_blank"><img src="image/kantenews.png" class="d-block w-100" alt="2"></a>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <!-- Carousel End -->
+        <!-- Group Card -->
+        <div class="card-group justify-content-center" style="padding-bottom: 5vh;">
+          <div class="card">
+            <a href="https://www.football.london/chelsea-fc/news/graham-potter-chelsea-arsenal-defeat-25448642" target="_blank"><img src="image/potter.jpg" class="card-img-top" alt="potternews"></a>
+            <div class="card-body">
+              <h5 class="card-title">Graham Potter On Degrace ?</h5>
+              <p class="card-text">Chelsea's defeat over Arsenal made many fans question Potter's performance. Graham Potter was judged not to be able to understand the right tactics and rotation of players during the game.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 23 hours ago</small>
+            </div>
+          </div>
+          <div class="card">
+            <a href="https://www.football.london/chelsea-fc/transfer-news/christopher-nkunku-chelsea-transfer-signing-25343016" target="_blank"><img src="image/nkunku.jpg" class="card-img-top" alt="nkunkunews"></a>
+            <div class="card-body">
+              <h5 class="card-title">Nkunku Transfer Still Not Clear</h5>
+              <p class="card-text">Chelsea management who want to bring in young players from RB Leipzig are still floating on the uncertainty of transfer times, negotiations, and the availability of nkunku to move.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 3 days ago</small>
+            </div>
+          </div>
+          <div class="card">
+            <a href="https://www.football.london/chelsea-fc/news/chelsea-player-ratings-denis-zakaria-25420461?int_source=nba" target="_blank"><img src="image/zakaria.png" class="card-img-top" alt="zakarianews" height="242px"></a>
+            <div class="card-body">
+              <h5 class="card-title">The Raise Of the Star ?</h5>
+              <p class="card-text">Zakaria, one of Chelsea's defenders managed to score the winning goal in the match against Dinamo Zagreb in the Champions League match yesterday. All fans hope this is a stepping stone for Zakaria.</p>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Last updated 2 days ago</small>
+            </div>
+          </div>
+        </div>
+        <!-- Group Card End -->
+      </div>
+    </section>
+    <!-- News End -->
+
+    <!-- Team -->
+    <section id="team">
+      <section class="jumbotron text-center">
+        <div class="container">
+          <div class="row text-center mb-3">
+            <div class="col">
+              <h2 style="padding-bottom: 3rem; font-weight: bold;">TEAM</h2>
+            </div>
+          </div>
+            <img src="image/profil.png" alt="Graham Potter" width="200" class="rounded-circle img-thumbnail">
+            <img src="image/profilemma.png" alt="Emma Hayes" width="200" class="rounded-circle img-thumbnail">
+            <h1 class="display-4">Coach:</h1>
+            <h2 class="display-4">Graham Potter And Emma Hayes</h2>
+          <div class="col">
+            <h2 style="padding-top: 3rem; padding-bottom: 3rem;">MEN TEAM</h2>
+          </div>
+          <!-- row 1 -->
+          <div class="col">
+            <h2 style="padding-top: 3rem; padding-bottom: 3rem;">Forward</h2>
+          </div>
+          <div class="d-flex justify-content-center">
+            <div class="card text-bg-dark my-3 mx-4" style="width: 18rem;">
+                <img src="image/profilauba.png" class="card-img-top" alt="1">
+                <div class="card-body">
+                  <p class="card-text">9</p>
+                  <p class="card-text">Pierre-Emerick Aubameyang</p>
+                  <p class="card-text">Forward</p>
+                </div>
+              </div>
+              <div class="card text-bg-dark my-3 mx-4" style="width: 18rem;">
+                <img src="image/profilsterling.png" class="card-img-top" alt="2">
+                <div class="card-body">
+                  <p class="card-text">17</p>
+                  <p class="card-text">Raheem Sterling</p>
+                  <p class="card-text">Forward</p>
+                </div>
+              </div>
+              <div class="card text-bg-dark my-3 mx-4" style="width: 18rem;">
+                <img src="image/profilbroja.png" class="card-img-top" alt="3">
+                <div class="card-body">
+                  <p class="card-text">18</p>
+                  <p class="card-text">Armando Broja</p>
+                  <p class="card-text">Forward</p>
+                </div>
+              </div>
+          </div>
+          <!-- row 1 end -->
+          <!-- row 2 -->
+          <div class="col">
+            <h2 style="padding-top: 3rem; padding-bottom: 3rem;">Midfielder</h2>
+          </div>
+          <div class="d-flex justify-content-center">
+            <div class="card text-bg-dark my-3 mx-4" style="width: 18rem;">
+                <img src="image/jorginho.png" class="card-img-top" alt="4">
+                <div class="card-body">
+                  <p class="card-text">5</p>
+                  <p class="card-text">Jorginho</p>
+                  <p class="card-text">Midfielder</p>
+                </div>
+              </div>
+              <div class="card text-bg-dark my-3 mx-4" style="width: 18rem;">
+                <img src="image/kante.png" class="card-img-top" alt="5">
+                <div class="card-body">
+                  <p class="card-text">7</p>
+                  <p class="card-text">N'Golo Kante</p>
+                  <p class="card-text">Midfielder</p>
+                </div>
+              </div>
+              <div class="card text-bg-dark my-3 mx-4" style="width: 18rem;">
+                <img src="image/kovacic.png" class="card-img-top" alt="6">
+                <div class="card-body">
+                  <p class="card-text">8</p>
+                  <p class="card-text">Mateo Kovacic</p>
+                  <p class="card-text">Midfielder</p>
+                </div>
+              </div>
+              <div class="card text-bg-dark my-3 mx-4" style="width: 18rem;">
+                <img src="image/pulisic.png" class="card-img-top" alt="7">
+                <div class="card-body">
+                  <p class="card-text">10</p>
+                  <p class="card-text">Christian Pulisic</p>
+                  <p class="card-text">Midfielder</p>
+                </div>
+              </div>
+          </div>
+          <!-- row 2 end -->
+          <!-- row 3 -->
+          <div class="d-flex justify-content-center">
+            <div class="card text-bg-dark my-3 mx-4" style="width: 18rem;">
+                <img src="image/cheek.png" class="card-img-top" alt="8">
+                <div class="card-body">
+                  <p class="card-text">12</p>
+                  <p class="card-text">Ruben Loftus-Cheek</p>
+                  <p class="card-text">Midfielder</p>
+                </div>
+              </div>
+              <div class="card text-bg-dark my-3 mx-4" style="width: 18rem;">
+                <img src="image/mount.png" class="card-img-top" alt="9">
+                <div class="card-body">
+                  <p class="card-text">19</p>
+                  <p class="card-text">Mason Mount</p>
+                  <p class="card-text">Midfielder</p>
+                </div>
+              </div>
+              <div class="card text-bg-dark my-3 mx-4" style="width: 18rem;">
+                <img src="image/ziyech.png" class="card-img-top" alt="10">
+                <div class="card-body">
+                  <p class="card-text">22</p>
+                  <p class="card-text">Hakim Ziyech</p>
+                  <p class="card-text">Midfielder</p>
+                </div>
+              </div>
+              <div class="card text-bg-dark my-3 mx-4" style="width: 18rem;">
+                <img src="image/havertz.png" class="card-img-top" alt="11">
+                <div class="card-body">
+                  <p class="card-text">29</p>
+                  <p class="card-text">Kai Havertz</p>
+                  <p class="card-text">Midfielder</p>
+                </div>
+              </div>
+          </div>
+          <!-- row 3 end -->
+          <!-- row 4 -->
+          <div class="d-flex justify-content-center">
+            <div class="card text-bg-dark my-3 mx-4" style="width: 18rem;">
+                <img src="image/conor.png" class="card-img-top" alt="12">
+                <div class="card-body">
+                  <p class="card-text">23</p>
+                  <p class="card-text">Conor Gallagher</p>
+                  <p class="card-text">Midfielder</p>
+                </div>
+              </div>
+              <div class="card text-bg-dark my-3 mx-4" style="width: 18rem;">
+                <img src="image/carney.png" class="card-img-top" alt="13">
+                <div class="card-body">
+                  <p class="card-text">30</p>
+                  <p class="card-text">Carney Chukwuemeka</p>
+                  <p class="card-text">Midfielder</p>
+                </div>
+              </div>
+              <div class="card text-bg-dark my-3 mx-4" style="width: 18rem;">
+                <img src="image/cesare.png" class="card-img-top" alt="14">
+                <div class="card-body">
+                  <p class="card-text">-</p>
+                  <p class="card-text">Cesare Casadei</p>
+                  <p class="card-text">Midfielder</p>
+                </div>
+              </div>
+          </div>
+          <!-- row 4 end -->
+          <!-- row 5 -->
+          <div class="col">
+            <h2 style="padding-top: 3rem; padding-bottom: 3rem;">Defender</h2>
+          </div>
+          <div class="d-flex justify-content-center">
+            <div class="card text-bg-dark my-3 mx-4" style="width: 18rem;">
+                <img src="image/silva.png" class="card-img-top" alt="15">
+                <div class="card-body">
+                  <p class="card-text">6</p>
+                  <p class="card-text">Thiago Silva</p>
+                  <p class="card-text">Defender</p>
+                </div>
+              </div>
+              <div class="card text-bg-dark my-3 mx-4" style="width: 18rem;">
+                <img src="image/james.png" class="card-img-top" alt="16">
+                <div class="card-body">
+                  <p class="card-text">24</p>
+                  <p class="card-text">Reece James</p>
+                  <p class="card-text">Defender</p>
+                </div>
+              </div>
+              <div class="card text-bg-dark my-3 mx-4" style="width: 18rem;">
+                <img src="image/cesar.png" class="card-img-top" alt="17">
+                <div class="card-body">
+                  <p class="card-text" style="color: yellow;">28</p>
+                  <p class="card-text" style="color: yellow;">Cesar Azpilicueta</p>
+                  <p class="card-text" style="color: yellow;">Defender</p>
+                </div>
+              </div>
+              <div class="card text-bg-dark my-3 mx-4" style="width: 18rem;">
+                <img src="image/koulibaly.png" class="card-img-top" alt="18">
+                <div class="card-body">
+                  <p class="card-text">26</p>
+                  <p class="card-text">Kalidou Koulibaly</p>
+                  <p class="card-text">Defender</p>
+                </div>
+              </div>
+          </div>
+          <!-- row 5 end -->
+          <!-- row 6 -->
+          <div class="d-flex justify-content-center">
+            <div class="card text-bg-dark my-3 mx-4" style="width: 18rem;">
+                <img src="image/cucurella.png" class="card-img-top" alt="19">
+                <div class="card-body">
+                  <p class="card-text">32</p>
+                  <p class="card-text">Marc Cucurella</p>
+                  <p class="card-text">Defender</p>
+                </div>
+              </div>
+              <div class="card text-bg-dark my-3 mx-4" style="width: 18rem;">
+                <img src="image/chalobah.png" class="card-img-top" alt="20">
+                <div class="card-body">
+                  <p class="card-text">14</p>
+                  <p class="card-text">Trevoh Chalobah</p>
+                  <p class="card-text">Defender</p>
+                </div>
+              </div>
+              <div class="card text-bg-dark my-3 mx-4" style="width: 18rem;">
+                <img src="image/chilwell.png" class="card-img-top" alt="21">
+                <div class="card-body">
+                  <p class="card-text">21</p>
+                  <p class="card-text">Ben Chilwell</p>
+                  <p class="card-text">Defender</p>
+                </div>
+              </div>
+              <div class="card text-bg-dark my-3 mx-4" style="width: 18rem;">
+                <img src="image/fofana.png" class="card-img-top" alt="22">
+                <div class="card-body">
+                  <p class="card-text">33</p>
+                  <p class="card-text">Wesley Fofana</p>
+                  <p class="card-text">Defender</p>
+                </div>
+              </div>
+          </div>
+          <!-- row 6 end -->
+          <!-- row 7 -->
+          <div class="col">
+            <h2 style="padding-top: 3rem; padding-bottom: 3rem;">Goalkeeper</h2>
+          </div>
+          <div class="d-flex justify-content-center">
+            <div class="card text-bg-dark my-3 mx-4" style="width: 18rem;">
+                <img src="image/kepa.png" class="card-img-top" alt="23">
+                <div class="card-body">
+                  <p class="card-text">1</p>
+                  <p class="card-text">Kepa Arrizabalaga</p>
+                  <p class="card-text">Goalkeeper</p>
+                </div>
+              </div>
+              <div class="card text-bg-dark my-3 mx-4" style="width: 18rem;">
+                <img src="image/mendy.png" class="card-img-top" alt="24">
+                <div class="card-body">
+                  <p class="card-text">16</p>
+                  <p class="card-text">Edouard Mendy</p>
+                  <p class="card-text">Goalkeeper</p>
+                </div>
+              </div>
+              <div class="card text-bg-dark my-3 mx-4" style="width: 18rem;">
+                <img src="image/marcus.png" class="card-img-top" alt="25">
+                <div class="card-body">
+                  <p class="card-text">13</p>
+                  <p class="card-text">Marcus Bettinelli</p>
+                  <p class="card-text">Goalkeeper</p>
+                </div>
+              </div>
+          </div>
+          <!-- row 7 end -->
+
+          
+          <div class="col">
+            <h2 style="padding-top: 3rem; padding-bottom: 3rem;">WOMEN TEAM</h2>
+          </div>
+          <!-- row 1 w-->
+          <div class="col">
+            <h2 style="padding-top: 3rem; padding-bottom: 3rem;">Forward</h2>
+          </div>
+          <div class="d-flex justify-content-center">
+            <div class="card text-bg-dark my-3 mx-4" style="width: 18rem;">
+                <img src="image/kerr.jpg" class="card-img-top" alt="26">
+                <div class="card-body">
+                  <p class="card-text">20</p>
+                  <p class="card-text">Sam Kerr</p>
+                  <p class="card-text">Forward</p>
+                </div>
+              </div>
+              <div class="card text-bg-dark my-3 mx-4" style="width: 18rem;">
+                <img src="image/kirby.jpg" class="card-img-top" alt="27">
+                <div class="card-body">
+                  <p class="card-text">14</p>
+                  <p class="card-text">Fran Kirby</p>
+                  <p class="card-text">Forward</p>
+                </div>
+              </div>
+              <div class="card text-bg-dark my-3 mx-4" style="width: 18rem;">
+                <img src="image/lauren.jpg" class="card-img-top" alt="28">
+                <div class="card-body">
+                  <p class="card-text">10</p>
+                  <p class="card-text">Lauren James</p>
+                  <p class="card-text">Forward</p>
+                </div>
+              </div>
+              <div class="card text-bg-dark my-3 mx-4" style="width: 18rem;">
+                <img src="image/bethany.jpg" class="card-img-top" alt="29">
+                <div class="card-body">
+                  <p class="card-text">9</p>
+                  <p class="card-text">Bethany England</p>
+                  <p class="card-text">Forward</p>
+                </div>
+              </div>
+          </div>
+          <!-- row 1 w end -->
+          <!-- row 2 w -->
+          <div class="col">
+            <h2 style="padding-top: 3rem; padding-bottom: 3rem;">Winger</h2>
+          </div>
+          <div class="d-flex justify-content-center">
+            <div class="card text-bg-dark my-3 mx-4" style="width: 18rem;">
+                <img src="image/johanna.jpg" class="card-img-top" alt="30">
+                <div class="card-body">
+                  <p class="card-text">19</p>
+                  <p class="card-text">Johanna Rytting Kaneryd</p>
+                  <p class="card-text">Winger</p>
+                </div>
+              </div>
+          </div>
+          <!-- row 2 w end -->
+          <!-- row 3 w -->
+          <div class="col">
+            <h2 style="padding-top: 3rem; padding-bottom: 3rem;">Midfielder</h2>
+          </div>
+          <div class="d-flex justify-content-center">
+            <div class="card text-bg-dark my-3 mx-4" style="width: 18rem;">
+                <img src="image/cankovic.jpg" class="card-img-top" alt="31">
+                <div class="card-body">
+                  <p class="card-text">28</p>
+                  <p class="card-text">Jelena Cankovic</p>
+                  <p class="card-text">Midfielder</p>
+                </div>
+              </div>
+              <div class="card text-bg-dark my-3 mx-4" style="width: 18rem;">
+                <img src="image/harder.jpg" class="card-img-top" alt="32">
+                <div class="card-body">
+                  <p class="card-text">23</p>
+                  <p class="card-text">Pernille Harder</p>
+                  <p class="card-text">Midfielder</p>
+                </div>
+              </div>
+              <div class="card text-bg-dark my-3 mx-4" style="width: 18rem;">
+                <img src="image/cuthbert.jpg" class="card-img-top" alt="33">
+                <div class="card-body">
+                  <p class="card-text">22</p>
+                  <p class="card-text">Erin Cuthbert</p>
+                  <p class="card-text">Midfielder</p>
+                </div>
+              </div>
+              <div class="card text-bg-dark my-3 mx-4" style="width: 18rem;">
+                <img src="image/fleming.jpg" class="card-img-top" alt="34">
+                <div class="card-body">
+                  <p class="card-text">17</p>
+                  <p class="card-text">Jessie Fleming</p>
+                  <p class="card-text">Midfielder</p>
+                </div>
+              </div>
+          </div>
+          <!-- row 3 w end -->
+          <!-- row 4 w -->
+          <div class="d-flex justify-content-center">
+            <div class="card text-bg-dark my-3 mx-4" style="width: 18rem;">
+                <img src="image/svitkova.jpg" class="card-img-top" alt="35">
+                <div class="card-body">
+                  <p class="card-text">13</p>
+                  <p class="card-text">Katerina Svitkova</p>
+                  <p class="card-text">Midfielder</p>
+                </div>
+              </div>
+              <div class="card text-bg-dark my-3 mx-4" style="width: 18rem;">
+                <img src="image/reiten.jpg" class="card-img-top" alt="36">
+                <div class="card-body">
+                  <p class="card-text">11</p>
+                  <p class="card-text">Gura Reiten</p>
+                  <p class="card-text">Midfielder</p>
+                </div>
+              </div>
+              <div class="card text-bg-dark my-3 mx-4" style="width: 18rem;">
+                <img src="image/leupolz.jpg" class="card-img-top" alt="37">
+                <div class="card-body">
+                  <p class="card-text">8</p>
+                  <p class="card-text">Melanie Leupolz</p>
+                  <p class="card-text">Midfielder</p>
+                </div>
+              </div>
+              <div class="card text-bg-dark my-3 mx-4" style="width: 18rem;">
+                <img src="image/ingle.jpg" class="card-img-top" alt="38">
+                <div class="card-body">
+                  <p class="card-text">5</p>
+                  <p class="card-text">Sophie Ingle</p>
+                  <p class="card-text">Midfielder</p>
+                </div>
+              </div>
+          </div>
+          <!-- row 4 end -->
+          <!-- row 5 -->
+          <div class="col">
+            <h2 style="padding-top: 3rem; padding-bottom: 3rem;">Defender</h2>
+          </div>
+          <div class="d-flex justify-content-center">
+            <div class="card text-bg-dark my-3 mx-4" style="width: 18rem;">
+                <img src="image/alsu.jpg" class="card-img-top" alt="39">
+                <div class="card-body">
+                  <p class="card-text">27</p>
+                  <p class="card-text">Alsu Abdullina</p>
+                  <p class="card-text">Defender</p>
+                </div>
+              </div>
+              <div class="card text-bg-dark my-3 mx-4" style="width: 18rem;">
+                <img src="image/kadeisha.jpg" class="card-img-top" alt="40">
+                <div class="card-body">
+                  <p class="card-text">26</p>
+                  <p class="card-text">Kadeisha Buchanan</p>
+                  <p class="card-text">Defender</p>
+                </div>
+              </div>
+              <div class="card text-bg-dark my-3 mx-4" style="width: 18rem;">
+                <img src="image/charles.jpg" class="card-img-top" alt="41">
+                <div class="card-body">
+                  <p class="card-text">21</p>
+                  <p class="card-text">Niamh Charles</p>
+                  <p class="card-text">Defender</p>
+                </div>
+              </div>
+          </div>
+          <!-- row 5 end -->
+          <!-- row 6 -->
+          <div class="d-flex justify-content-center">
+            <div class="card text-bg-dark my-3 mx-4" style="width: 18rem;">
+                <img src="image/maren.jpg" class="card-img-top" alt="42">
+                <div class="card-body">
+                  <p class="card-text">18</p>
+                  <p class="card-text">Maren Mjelde</p>
+                  <p class="card-text">Defender</p>
+                </div>
+              </div>
+              <div class="card text-bg-dark my-3 mx-4" style="width: 18rem;">
+                <img src="image/eriksson.jpg" class="card-img-top" alt="43">
+                <div class="card-body">
+                  <p class="card-text" style="color: yellow;">16</p>
+                  <p class="card-text" style="color: yellow;">Magdalena Eriksson</p>
+                  <p class="card-text" style="color: yellow;">Defender</p>
+                </div>
+              </div>
+              <div class="card text-bg-dark my-3 mx-4" style="width: 18rem;">
+                <img src="image/perisset.jpg" class="card-img-top" alt="44">
+                <div class="card-body">
+                  <p class="card-text">15</p>
+                  <p class="card-text">Eve Perisset</p>
+                  <p class="card-text">Defender</p>
+                </div>
+              </div>
+          </div>
+          <!-- row 6 end -->
+          <!-- row 7 -->
+          <div class="d-flex justify-content-center">
+            <div class="card text-bg-dark my-3 mx-4" style="width: 18rem;">
+                <img src="image/carter.jpg" class="card-img-top" alt="45">
+                <div class="card-body">
+                  <p class="card-text">7</p>
+                  <p class="card-text">Jess Carter</p>
+                  <p class="card-text">Defender</p>
+                </div>
+              </div>
+              <div class="card text-bg-dark my-3 mx-4" style="width: 18rem;">
+                <img src="image/bright.jpg" class="card-img-top" alt="46">
+                <div class="card-body">
+                  <p class="card-text">4</p>
+                  <p class="card-text">Millie Bright</p>
+                  <p class="card-text">Defender</p>
+                </div>
+              </div>
+              <div class="card text-bg-dark my-3 mx-4" style="width: 18rem;">
+                <img src="image/nouwen.jpg" class="card-img-top" alt="47">
+                <div class="card-body">
+                  <p class="card-text">3</p>
+                  <p class="card-text">Aniek Nouwen</p>
+                  <p class="card-text">Defender</p>
+                </div>
+              </div>
+          </div>
+          <!-- row 7 end -->
+          <!-- row 8 -->
+          <div class="col">
+            <h2 style="padding-top: 3rem; padding-bottom: 3rem;">Goalkeeper</h2>
+          </div>
+          <div class="d-flex justify-content-center">
+            <div class="card text-bg-dark my-3 mx-4" style="width: 18rem;">
+                <img src="image/orman.jpg" class="card-img-top" alt="48">
+                <div class="card-body">
+                  <p class="card-text">32</p>
+                  <p class="card-text">Emily Orman</p>
+                  <p class="card-text">Goalkeeper</p>
+                </div>
+              </div>
+              <div class="card text-bg-dark my-3 mx-4" style="width: 18rem;">
+                <img src="image/berger.jpg" class="card-img-top" alt="49">
+                <div class="card-body">
+                  <p class="card-text">30</p>
+                  <p class="card-text">Ann-Katrin Berger</p>
+                  <p class="card-text">Goalkeeper</p>
+                </div>
+              </div>
+              <div class="card text-bg-dark my-3 mx-4" style="width: 18rem;">
+                <img src="image/musovic.jpg" class="card-img-top" alt="50">
+                <div class="card-body">
+                  <p class="card-text">1</p>
+                  <p class="card-text">Zecira Musovic</p>
+                  <p class="card-text">Goalkeeper</p>
+                </div>
+              </div>
+          </div>
+          <!-- row 8 end -->
+        </div>
+      </section>
+    </section>
+    <!-- Team End -->
+
+    <!-- Match -->
+    <section class="banner d-flex justify-content-center align-items-center text-white p-md-3" id="match">
+      <div class="container">
+        <div class="row">            
+          <div class="col-md-6 text-white">
+            <div class="banner_desc" style="padding-top: 10rem;">
+              <div onmouseover="this.style.color='#0dcaf0'" onmouseout="this.style.color='#ffff'" class="content">
+                <h1 class="tulisan" style="padding-right: 15px;"> 
+                  CHELSEA FOOTBALL CLUB
+                </h1>
+              </div>
+              <div onmouseover="this.style.color='#ff0000'" onmouseout="this.style.color='#ffff'" class="content">
+                <h1 class="tulisan" style="padding-right: 15px;"> 
+                  NEXT FIXTURE  
+                </h1>
+              </div>
+                <a href="https://www.premierleague.com/fixtures" target="_blank" class="btn btn-outline text-white">Next Fixtures</a>
+                <a href="https://www.premierleague.com/tables" target="_blank" class="btn btn-outline text-white">EPL Standings</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Match End -->
+
+    <!-- Shop -->
+    <section id="shop">
+      <div class="container">
+        <div class="row text-center mb-3">
+          <div class="col text-white">
+            <h2 style="padding-bottom: 3rem; font-weight: bold;">SHOP</h2>
+          </div>
+          <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <a href="https://www.chelseamegastore.com/en/" target="_blank"><img src="image/model1.png" class="d-block w-100" alt="model1"></a>
+              </div>
+              <div class="carousel-item">
+                <a href="https://www.chelseamegastore.com/en/" target="_blank"><img src="image/model2.png" class="d-block w-100" alt="model2"></a>
+              </div>
+              <div class="carousel-item">
+                <a href="https://www.chelseamegastore.com/en/" target="_blank"><img src="image/model3.png" class="d-block w-100" alt="model3"></a>
+              </div>
+            </div>
+          </div>
+          <div class="col text-white">
+            <h2 style="padding-bottom: 3rem; padding-top: 3rem; font-weight: bold;">NEW PRODUCT</h2>
+          </div>
+          <div class="row justify-content-center">
+            <div class="card mx-3" style="width: 18rem; background-color: #ffff;">
+              <img src="image/kit.jpg" class="card-img-top" alt="produk1">
+              <div class="card-body">
+                <h5 class="card-title">Chelsea Home Stadium Shirt 2022-23</h5>
+                <p class="card-text">This item usually ships within one business day. Please allow an extra 3 days for delivery of items with player or custom name and number printing.</p>
+                <span class="fa fa-star text-success"></span>
+                <span class="fa fa-star text-success"></span>
+                <span class="fa fa-star text-success"></span>
+                <span class="fa fa-star text-success"></span>
+                <span class="fa fa-star text-success"></span><br>
+                <a href="https://www.chelseamegastore.com/en/chelsea-men/t-43110668+ga-34+z-915271-809855383" target="_blank" class="btn btn-primary">Detail</a>
+                <a href="https://www.chelseamegastore.com/en/chelsea-home-stadium-shirt-2022-23/p-3492251103801776+z-941-4247439145?_ref=p-GALP:m-GRID:i-r0c0:po-0" target="_blank" class="btn btn-danger">€74.95</a>
+              </div>
+            </div>
+            <div class="card mx-3" style="width: 18rem; background-color: #ffff;">
+              <img src="image/kit2.jpg" class="card-img-top" alt="produk2">
+              <div class="card-body">
+                <h5 class="card-title">Chelsea Third Stadium Shirt 2022-23</h5>
+                <p class="card-text">This item usually ships within one business day. Please allow an extra 3 days for delivery of items with player or custom name and number printing.</p>
+                <span class="fa fa-star text-success"></span>
+                <span class="fa fa-star text-success"></span>
+                <span class="fa fa-star text-success"></span>
+                <span class="fa fa-star text-success"></span>
+                <span class="fa fa-star-half text-success"></span><br>
+                <a href="https://www.chelseamegastore.com/en/chelsea-men/t-43110668+ga-34+z-915271-809855383" target="_blank" class="btn btn-primary">Detail</a>
+                <a href="https://www.chelseamegastore.com/en/chelsea-third-stadium-shirt-2022-23/p-6747147732024738+z-84-1692949676?_ref=p-GALP:m-GRID:i-r0c1:po-1" target="_blank" class="btn btn-danger">€74.95</a>
+              </div>
+            </div>
+            <div class="card mx-3" style="width: 18rem; background-color: #ffff;">
+              <img src="image/kit3.jpg" class="card-img-top" alt="produk3">
+              <div class="card-body">
+                <h5 class="card-title">Chelsea Away Stadium Shirt 2022-23</h5>
+                <p class="card-text">This item usually ships within one business day. Please allow an extra 3 days for delivery of items with player or custom name and number printing.</p>
+                <span class="fa fa-star text-success"></span>
+                <span class="fa fa-star text-success"></span>
+                <span class="fa fa-star text-success"></span>
+                <span class="fa fa-star text-success"></span>
+                <span class="fa fa-star-half text-success"></span><br>
+                <a href="https://www.chelseamegastore.com/en/chelsea-men/t-43110668+ga-34+z-915271-809855383" target="_blank" class="btn btn-primary">Detail</a>
+                <a href="https://www.chelseamegastore.com/en/chelsea-away-stadium-shirt-2022-23/p-9025813354686667+z-88-762301896?_ref=p-GALP:m-GRID:i-r0c2:po-2" target="_blank" class="btn btn-danger">€74.95</a>
+              </div>
+            </div>
+            <div class="card mx-3" style="width: 18rem; background-color: #ffff;">
+              <img src="image/jaket.jpg" class="card-img-top" alt="produk4">
+              <div class="card-body">
+                <h5 class="card-title">Chelsea Down Fill Vest - Navy</h5>
+                <p class="card-text">In Stock - This item ships within one business day. This item ships within one business day.</p><br><br>
+                <span class="fa fa-star text-success"></span>
+                <span class="fa fa-star text-success"></span>
+                <span class="fa fa-star text-success"></span>
+                <span class="fa fa-star text-success"></span>
+                <span class="fa fa-star text-success"></span><br>
+                <a href="https://www.chelseamegastore.com/en/chelsea-men/t-43110668+ga-34+z-915271-809855383" target="_blank" class="btn btn-primary">Detail</a>
+                <a href="https://www.chelseamegastore.com/en/chelsea-down-fill-vest-navy/p-3447706698573797+z-927-3618932580?_ref=p-GALP:m-GRID:i-r1c1:po-4" target="_blank" class="btn btn-danger">€74.95</a>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-center my-4">
+            <div class="card mx-3" style="width: 18rem; background-color: #ffff;">
+              <img src="image/wanita1.jpg" class="card-img-top" alt="produk5">
+              <div class="card-body">
+                <h5 class="card-title">Chelsea Home Stadium Shirt 2022-23 - Womens</h5>
+                <p class="card-text">This item usually ships within one business day. Please allow an extra 3 days for delivery of items with player or custom name and number printing.</p>
+                <span class="fa fa-star text-success"></span>
+                <span class="fa fa-star text-success"></span>
+                <span class="fa fa-star text-success"></span>
+                <span class="fa fa-star text-success"></span>
+                <span class="fa fa-star text-success"></span><br>
+                <a href="https://www.chelseamegastore.com/en/chelsea-women/t-32338402+ga-68+z-920940-1417060386" target="_blank" class="btn btn-primary">Detail</a>
+                <a href="https://www.chelseamegastore.com/en/chelsea-home-stadium-shirt-2022-23-womens/p-1270368814355499+z-89-690397919?_ref=p-GALP:m-GRID:i-r0c0:po-0" target="_blank" class="btn btn-danger">€74.95</a>
+              </div>
+            </div>
+            <div class="card mx-3" style="width: 18rem; background-color: #ffff;">
+              <img src="image/wanita2.jpg" class="card-img-top" alt="produk6">
+              <div class="card-body">
+                <h5 class="card-title">Chelsea Fairisle Christmas Pyjama - Blue - Womens</h5>
+                <p class="card-text">In Stock - This item ships within one business day. This item ships within one business day.</p><br>
+                <span class="fa fa-star text-success"></span>
+                <span class="fa fa-star text-success"></span>
+                <span class="fa fa-star text-success"></span>
+                <span class="fa fa-star text-success"></span>
+                <span class="fa fa-star-half text-success"></span><br>
+                <a href="https://www.chelseamegastore.com/en/chelsea-women/t-32338402+ga-68+z-920940-1417060386" target="_blank" class="btn btn-primary">Detail</a>
+                <a href="https://www.chelseamegastore.com/en/chelsea-fairisle-christmas-pyjama-blue-womens/p-5670702622515560+z-83-619536047?_ref=p-GALP:m-GRID:i-r0c1:po-1" target="_blank" class="btn btn-danger">€32.00</a>
+              </div>
+            </div>
+            <div class="card mx-3" style="width: 18rem; background-color: #ffff;">
+              <img src="image/wanita3.jpg" class="card-img-top" alt="produk7">
+              <div class="card-body">
+                <h5 class="card-title">Chelsea Third Stadium Shirt 2022-23 - Womens</h5>
+                <p class="card-text">This item usually ships within one business day. Please allow an extra 3 days for delivery of items with player or custom name and number printing.</p>
+                <span class="fa fa-star text-success"></span>
+                <span class="fa fa-star text-success"></span>
+                <span class="fa fa-star text-success"></span>
+                <span class="fa fa-star text-success"></span>
+                <span class="fa fa-star-half text-success"></span><br>
+                <a href="https://www.chelseamegastore.com/en/chelsea-women/t-32338402+ga-68+z-920940-1417060386" target="_blank" class="btn btn-primary">Detail</a>
+                <a href="https://www.chelseamegastore.com/en/chelsea-third-stadium-shirt-2022-23-womens/p-1270813354681354+z-902-3943851247?_ref=p-GALP:m-GRID:i-r0c2:po-2" target="_blank" class="btn btn-danger">€74.95</a>
+              </div>
+            </div>
+            <div class="card mx-3" style="width: 18rem; background-color: #ffff;">
+              <img src="image/wanita4.jpg" class="card-img-top" alt="produk8">
+              <div class="card-body">
+                <h5 class="card-title">Chelsea Away Stadium Shirt 2022-23 - Womens</h5>
+                <p class="card-text">This item usually ships within one business day. Please allow an extra 3 days for delivery of items with player or custom name and number printing.</p>
+                <span class="fa fa-star text-success"></span>
+                <span class="fa fa-star text-success"></span>
+                <span class="fa fa-star text-success"></span>
+                <span class="fa fa-star text-success"></span>
+                <span class="fa fa-star text-success"></span><br>
+                <a href="https://www.chelseamegastore.com/en/chelsea-women/t-32338402+ga-68+z-920940-1417060386" target="_blank" class="btn btn-primary">Detail</a>
+                <a href="https://www.chelseamegastore.com/en/chelsea-away-stadium-shirt-2022-23-womens/p-1225148810561093+z-968-4189136576?_ref=p-GALP:m-GRID:i-r1c0:po-3" target="_blank" class="btn btn-danger">€74.95</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Shop End -->
+
+    <!-- Fans -->
+      <section class="jumbotron text-center" id="fans">
+        <div class="container">
+          <div class="row text-center mb-3">
+            <div class="col">
+              <h2 style="padding-bottom: 2rem; font-weight: bold;">FANS</h2>
+            </div>
+          </div>
+          <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel" style="padding-bottom: 1rem;">
+            <div class="carousel-inner">
+              <div class="carousel-item active" data-interval="3000">
+                <img src="image/asia1.png" class="d-block w-100" alt="0">
+              </div>
+              <div class="carousel-item" data-interval="3000">
+                <img src="image/asia2.png" class="d-block w-100" alt="1">
+              </div>
+              <div class="carousel-item" data-interval="3000">
+                <img src="image/asia3.png" class="d-block w-100" alt="2">
+              </div>
+              <div class="carousel-item" data-interval="3000">
+                <img src="image/eropa1.png" class="d-block w-100" alt="3">
+              </div>
+              <div class="carousel-item" data-interval="3000">
+                <img src="image/eropa2.png" class="d-block w-100" alt="4">
+              </div>
+              <div class="carousel-item" data-interval="3000">
+                <img src="image/eropa3.png" class="d-block w-100" alt="5">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+          <audio controls src="chelseaanthem.mp3"></audio>
+        </div>
+      </section>
+    <!-- Fans End -->
+
+    <!-- Footer -->
+    <section class="footer">
+      <div class="social">
+        <a href="https://www.instagram.com/chelseafc/" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.youtube.com/chelseatv" target="_blank"><i class="fab fa-youtube"></i></a>
+        <a href="https://twitter.com/ChelseaFC" target="_blank"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.facebook.com/ChelseaFC" target="_blank"><i class="fab fa-facebook"></i></a>
+      </div>
+      <ul class="list">
+        <li>
+          <a href="#">Home</a>
+        </li>
+        <li>
+          <a href="#">Services</a>
+        </li>
+        <li>
+          <a href="#">About</a>
+        </li>
+        <li>
+          <a href="#">Terms</a>
+        </li>
+        <li>
+          <a href="#">Privacy Policy</a>
+        </li>
+      </ul>
+      <p class="copyright">
+        CHELSEA FC @ 2022
+      </p>
+    </section>
+    <!-- Footer End -->
+
+    <!-- Bootstrap QS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <!-- Bootsrap QS -->
+
+  </body>
+</html>
