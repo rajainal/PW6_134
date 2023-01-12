@@ -1,0 +1,333 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&family=Nanum+Myeongjo:wght@700&family=Noto+Sans+JP:wght@300;700&family=Roboto&family=Roboto+Mono:wght@200&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-color: #111;
+}
+
+.col h2 {
+  text-align: center;
+  padding-top: 48px;
+  padding-bottom: 48px;
+  font-weight: bold;
+  color: black;
+}
+
+header {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 30px 10%;
+  background-color: #f15fa3;
+  opacity: 86%;
+}
+
+.logo {
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+.logo img {
+  border-radius: 30%;
+  background-color: #FFFFFF;
+  margin-right: 5px;
+  float: left;
+  height: 42;
+  width: 50;
+}
+
+.logo2 {
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  cursor: pointer;
+  text-transform: uppercase;
+  margin-right: auto;
+}
+
+nav li {
+  display: inline-block;
+  list-style: none;
+  padding: 0px;
+}
+nav li button {
+  background-color: #f15fa3;
+  padding-right: 2rem;
+}
+nav li button a {
+  font-weight: bold;
+  color: black;
+}
+nav li button:hover {
+  background-color: #45f3ff;
+}
+
+a {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  color: black;
+}
+a button {
+  text-decoration: none;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button {
+  background-color: #f15fa3;
+  margin-left: 2rem;
+  padding: 9px 25px;
+  border: none;
+  border-radius: 8px;
+  transition: all 0.4s ease 0s;
+}
+
+button:hover {
+  background-color: #45f3ff;
+}
+button:hover a {
+  font-weight: bold;
+}
+
+.box {
+  position: relative;
+  width: 380px;
+  height: 420px;
+  background: #1c1c1c;
+  border-radius: 8px;
+  margin: 11% auto;
+  overflow: hidden;
+}
+
+.box::before {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 380px;
+  height: 420px;
+  background: linear-gradient(0deg, transparent, #f15fa3, #f15fa3);
+  transform-origin: bottom right;
+  -webkit-animation: animate 6s linear infinite;
+          animation: animate 6s linear infinite;
+}
+
+.box::after {
+  content: "";
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 380px;
+  height: 420px;
+  background: linear-gradient(0deg, transparent, #f15fa3, #f15fa3);
+  transform-origin: bottom right;
+  -webkit-animation: animate 6s linear infinite;
+          animation: animate 6s linear infinite;
+  -webkit-animation-delay: -3s;
+          animation-delay: -3s;
+}
+
+.form {
+  position: absolute;
+  inset: 2px;
+  border-radius: 8px;
+  background: #28292d;
+  z-index: 10;
+  padding: 50px 40px;
+  display: flex;
+  flex-direction: column;
+}
+.form h2 {
+  color: #f15fa3;
+  font-weight: 1000;
+  text-align: center;
+  letter-spacing: 0.1em;
+}
+
+.inputBox {
+  position: relative;
+  width: 300px;
+  margin-top: 35px;
+}
+.inputBox input {
+  position: relative;
+  width: 100%;
+  padding: 20px 10px 10px;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: #23242a;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  z-index: 10;
+}
+.inputBox span {
+  position: absolute;
+  left: 0;
+  padding: 20px 0px 10px;
+  font-size: 1em;
+  color: #8f8f8f;
+  pointer-events: none;
+  letter-spacing: 0.05em;
+  transition: 0s;
+}
+.inputBox input:valid ~ span,
+.inputBox input:focus ~ span {
+  color: #f15fa3;
+  transform: translateX(0px) translateY(-34px);
+  font-size: 0.75em;
+}
+.inputBox i {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 2px;
+  background: #f15fa3;
+  border-radius: 4px;
+  transition: 0.5s;
+  pointer-events: none;
+  z-index: 9;
+}
+.inputBox input:valid ~ i,
+.inputBox input:focus ~ i {
+  height: 44px;
+}
+
+input[type=submit] {
+  border: none;
+  outline: none;
+  background: #f15fa3;
+  padding: 11px 25px;
+  width: 100%;
+  margin-top: 10px;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+input[type=submit]:active {
+  opacity: 0.8;
+}
+
+@-webkit-keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.error {
+  background: #F2DEDE;
+  color: #A94442;
+  padding: 10px;
+  width: 95%;
+  border-radius: 5px;
+  margin: 20px auto;
+}
+
+footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #111;
+  height: auto;
+  width: 100%;
+  font-family: "Open Sans";
+  padding-top: 40px;
+  color: #fff;
+  margin-top: 24rem;
+}
+
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+}
+.footer-content h3 {
+  font-size: 1.8rem;
+  font-weight: 400;
+  text-transform: capitalize;
+  line-height: 3rem;
+}
+.footer-content p {
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+}
+
+.socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+.socials li {
+  margin: 0 10px;
+}
+.socials a {
+  text-decoration: none;
+  color: #fff;
+}
+.socials a i {
+  font-size: 1.1rem;
+  transition: color 0.4s ease;
+}
+
+.socials a:hover i {
+  color: aqua;
+}
+
+.footer-bottom {
+  background: #000;
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+}
+.footer-bottom p {
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+.footer-bottom span {
+  text-transform: uppercase;
+  opacity: 0.4;
+  font-weight: 200;
+}
+
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+}
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+}/*# sourceMappingURL=log.css.map */
